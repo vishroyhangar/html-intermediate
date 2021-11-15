@@ -1,0 +1,104 @@
+// out: ../css/main.css
+//-----------------------------
+
+@fontRegular: 400;
+@fontSemiBold: 600;
+@fontBold: 700;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+
+    body {
+        margin: 2rem;
+
+        main {
+            div {
+                margin: 5rem auto;
+            }
+
+
+
+            h1 {
+                font-weight: @fontBold;
+                margin-bottom: 0.5rem;
+            }
+
+
+
+            table {
+                width: 100%;
+                text-align: left;
+                border: 2px solid red;
+
+                tr {
+                    &:first-child {
+                        border-top: 0;
+                    }
+
+                }
+
+                thead {
+                    border: 2px black;
+                    background-color: yellow;
+
+                    th {
+                        font-weight: @fontSemiBold;
+                        padding: 0.5rem 1rem;
+                        border: 0;
+                        margin: 0;
+                    }
+                }
+
+                tbody {
+                    background-color: white;
+
+                    tr {
+                        transition: all 0.4s ease;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: lightgray;
+                        }
+
+                        td {
+                            margin: 0;
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+
+
+                }
+
+            }
+
+
+            .video-audio {
+                display: flex;
+                justify-content: space-around;
+
+                div {
+                    width: 45%;
+
+                    video {
+                        width: 100%;
+                    }
+                }
+            }
+
+
+            .contents {
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+
+                iframe {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}

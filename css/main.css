@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Poppins', sans-serif;
+}
+html body {
+  margin: 2rem;
+}
+html body main div {
+  margin: 5rem auto;
+}
+html body main h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+html body main table {
+  width: 100%;
+  text-align: left;
+  border: 2px solid red;
+}
+html body main table tr:first-child {
+  border-top: 0;
+}
+html body main table thead {
+  border: 2px black;
+  background-color: yellow;
+}
+html body main table thead th {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin: 0;
+}
+html body main table tbody {
+  background-color: white;
+}
+html body main table tbody tr {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+html body main table tbody tr:hover {
+  background-color: lightgray;
+}
+html body main table tbody tr td {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+html body main .video-audio {
+  display: flex;
+  justify-content: space-around;
+}
+html body main .video-audio div {
+  width: 45%;
+}
+html body main .video-audio div video {
+  width: 100%;
+}
+html body main .contents {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+html body main .contents iframe {
+  width: 48%;
+}
