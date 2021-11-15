@@ -103,6 +103,55 @@ html {
                     width: 48%;
                 }
             }
+
+
+            .css-selector {
+                div {
+                    margin: 0;
+                }
+
+                .contents {
+                    display: flex;
+                    justify-content: space-around;
+                    span {
+                        font-weight: @fontRegular;
+                        font-size: 0.8rem;
+                    }
+
+                    p,
+                    h4 {
+                        background-color: chocolate;
+                        padding: 1rem;
+                        font-weight: @fontRegular;
+                    }
+
+                    .half-width {
+                        width: 30%;
+                    }
+
+                    .adjacent {
+                        .shape {
+                            h4+p {
+                                background-color: blue;
+                            }
+                        }
+                    }
+
+                    .direct-child {
+
+                        // this sign target the direct children mentionned after '>'
+                        .shape > p {
+                            background-color: yellow;
+
+                            div {
+                                background-color: red;
+                            }
+                        }
+                    }
+                }
+
+
+            }
         }
     }
 }

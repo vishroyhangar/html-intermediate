@@ -56,6 +56,9 @@ html body main .video-audio div {
 html body main .video-audio div video {
   width: 100%;
 }
+html body main .video-audio div audio {
+  width: 100%;
+}
 html body main .contents {
   margin: 0;
   display: flex;
@@ -63,4 +66,33 @@ html body main .contents {
 }
 html body main .contents iframe {
   width: 48%;
+}
+html body main .css-selector div {
+  margin: 0;
+}
+html body main .css-selector .contents {
+  display: flex;
+  justify-content: space-around;
+}
+html body main .css-selector .contents span {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+html body main .css-selector .contents p,
+html body main .css-selector .contents h4 {
+  background-color: chocolate;
+  padding: 1rem;
+  font-weight: 400;
+}
+html body main .css-selector .contents .half-width {
+  width: 30%;
+}
+html body main .css-selector .contents .adjacent .shape h4 + p {
+  background-color: blue;
+}
+html body main .css-selector .contents .direct-child .shape > p {
+  background-color: yellow;
+}
+html body main .css-selector .contents .direct-child .shape > p div {
+  background-color: red;
 }
