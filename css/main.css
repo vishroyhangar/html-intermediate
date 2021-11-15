@@ -88,11 +88,14 @@ html body main .css-selector .contents .half-width {
   width: 30%;
 }
 html body main .css-selector .contents .adjacent .shape h4 + p {
-  background-color: blue;
+  background-color: cyan;
 }
 html body main .css-selector .contents .direct-child .shape > p {
-  background-color: yellow;
+  background-color: cyan;
 }
 html body main .css-selector .contents .direct-child .shape > p div {
   background-color: red;
+}
+html body main .css-selector .contents .direct-sibling .shape h4 ~ p {
+  background-color: cyan;
 }

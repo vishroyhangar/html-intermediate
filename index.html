@@ -96,7 +96,7 @@
 
                 <div  class="contents">
                     <div class="adjacent half-width">
-                        <h3>Adjacent selector. <br> <span>h4 + p targets first sibling of h4 that is a P</span></h3>
+                        <h3>Adjacent selector. <br> <span>h4 + p targets first sibling of h4 'First title' that is a P</span></h3>
                     
                         <div class="shape">
                             <h4>First Title</h4>
@@ -110,7 +110,11 @@
                     </div>
                     
                     <div class="direct-child half-width">
-                        <h3>Child combinator</h3>
+                        <h3>Child combinator
+                            <br> <span>.shape > p targets all p which are direct childredn os div 
+                                .shape
+                            </span>
+                        </h3>
                     
                         <div class="shape">
                             <h4>First Title</h4>
@@ -128,17 +132,20 @@
                     </div>
 
                     <div class="direct-sibling half-width">
-                        <h3>All siblings</h3>
+                        <h3>All siblings <br>
+                        <span>h4 ~ p targets all siblings of h4 'First title'</span></h3>
                     
                         <div class="shape">
                             <h4>First Title</h4>
                     
-                            <p>Sibling 1</p>
+                            <p>Sibling 1 of 'First title'</p>
                     
-                            <p>Sibling 2</p>
+                            <p>Sibling 2 of 'First title'</p>
 
-                            <p>Sibling 3</p>
+                            <p>Sibling 3 of 'First title'</p>
                             
+                            <p>Sibling 4 of 'First title'</p>
+
                             <div>
                                 <p>This is a grand child, so it is not colored yellow</p>
                             </div>

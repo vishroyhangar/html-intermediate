@@ -132,7 +132,7 @@ html {
                     .adjacent {
                         .shape {
                             h4+p {
-                                background-color: blue;
+                                background-color: cyan;
                             }
                         }
                     }
@@ -141,10 +141,18 @@ html {
 
                         // this sign target the direct children mentionned after '>'
                         .shape > p {
-                            background-color: yellow;
+                            background-color: cyan;
 
                             div {
                                 background-color: red;
+                            }
+                        }
+                    }
+
+                    .direct-sibling {
+                        .shape {
+                            h4 ~ p {
+                                background-color: cyan;
                             }
                         }
                     }
